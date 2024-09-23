@@ -22,7 +22,8 @@ void default_constants() {
   chassis.pid_turn_exit_condition_set(80_ms, 3_deg, 250_ms, 7_deg, 500_ms, 500_ms);
   chassis.pid_swing_exit_condition_set(80_ms, 3_deg, 250_ms, 7_deg, 500_ms, 500_ms);
   chassis.pid_drive_exit_condition_set(80_ms, 1_in, 250_ms, 3_in, 500_ms, 500_ms);
-
+   
+   
   chassis.pid_turn_chain_constant_set(3_deg);
   chassis.pid_swing_chain_constant_set(5_deg);
   chassis.pid_drive_chain_constant_set(3_in);
@@ -30,10 +31,25 @@ void default_constants() {
   chassis.slew_drive_constants_set(7_in, 80);
 }
 
+void test(){
+
+}
+
+void leftSide(){
+
+}
+void rightSide(){
+
+}
+void soloWP(){
+
+}
+void Skills(){
+}
 ///
 // Drive Example
 ///
-void drive_example() {
+void drive_example_48(){
   // The first parameter is target inches
   // The second parameter is max speed the robot will drive at
   // The third parameter is a boolean (true or false) for enabling/disabling a slew at the start of drive motions
